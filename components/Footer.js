@@ -34,7 +34,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-blue-100">
                 <Mail size={18} />
-                <span>help@knitigy.com</span>
+                <span>nikhilks.981@gmail.com</span>
               </div>
               <div className="flex items-start space-x-3 text-blue-100">
                 <MapPin size={18} className="mt-0.5" />
