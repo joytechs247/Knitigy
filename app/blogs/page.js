@@ -2,6 +2,7 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Link from 'next/link'
 import { Calendar, Clock, ArrowRight } from 'lucide-react'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'Blogs & Guides | Knitigy',
@@ -17,30 +18,48 @@ export const metadata = {
 const blogPosts = [
   {
     slug: 'property-title-check',
-    title: 'Property Title Check: 8 Things Your Professional Will Look For',
-    excerpt: 'Learn the critical elements professionals examine during property title verification to protect your investment and avoid legal complications.',
+    title: 'Property Title Check / Verification — Why it\'s your first must-do before buying property',
+    excerpt: 'Learn why property title verification is crucial before buying any property and how it protects you from fraud and legal complications.',
     date: '2024-01-15',
+    readTime: '6 min read',
+    category: 'Property',
+    image: '/blog1.png'
+  },
+  {
+    slug: 'sale-gift-lease-deed',
+    title: 'Sale / Gift / Lease Deed Drafting – Get It Right from the Start',
+    excerpt: 'Professional deed drafting ensures your property transactions are legally secure and free from future disputes.',
+    date: '2024-01-12',
     readTime: '8 min read',
     category: 'Property',
-    image: '🏠'
+    image: '/blog2.png'
   },
   {
-    slug: 'will-vs-poa',
-    title: 'Will vs Power of Attorney: When You Need Which Document',
-    excerpt: 'Understand the key differences between a Will and Power of Attorney and when to use each document for proper estate planning and asset protection.',
-    date: '2024-01-12',
-    readTime: '10 min read',
-    category: 'Personal',
-    image: '📝'
-  },
-  {
-    slug: 'rent-agreement-guide',
-    title: 'How to Create a Rental Agreement That Protects Both Parties',
-    excerpt: 'Essential clauses and legal requirements for creating comprehensive rental agreements that safeguard both landlords and tenants interests.',
+    slug: 'mutation-registration-help',
+    title: 'Mutation & Registration Help — Secure Your Ownership, from Deed to Official Records',
+    excerpt: 'Complete guide to property registration and mutation process in Delhi and UP to secure your ownership rights.',
     date: '2024-01-10',
     readTime: '7 min read',
-    category: 'Rental',
-    image: '🔑'
+    category: 'Property',
+    image: '/blog3.png'
+  },
+  {
+    slug: 'name-change-guide',
+    title: 'Hassle-Free Name Change: Your Step-by-Step Guide to Official Gazette Publication',
+    excerpt: 'Complete legal process for name change including affidavit, newspaper publication, and gazette notification.',
+    date: '2024-01-08',
+    readTime: '5 min read',
+    category: 'Personal',
+    image: '/blog4.png'
+  },
+  {
+    slug: 'will-drafting-mistakes',
+    title: 'Will Drafting Mistakes: The Simple Fix That Stops Family Court Disputes',
+    excerpt: 'Learn how proper will drafting can prevent family disputes and ensure your assets are distributed as per your wishes.',
+    date: '2024-01-05',
+    readTime: '6 min read',
+    category: 'Personal',
+    image: '/blog5.png'
   }
 ]
 
@@ -70,9 +89,15 @@ export default function Blogs() {
                 <article key={post.slug} className="card group hover:shadow-lg transition-all duration-300 hover:scale-105">
                   <Link href={`/blogs/${post.slug}`} className="block h-full">
                     <div className="p-6 h-full flex flex-col">
-                      {/* Blog Image */}
-                      <div className="w-full h-48 bg-gradient-to-br from-primary-500 to-brand-teal rounded-xl flex items-center justify-center text-white text-4xl mb-4">
-                        {post.image}
+                      {/* Blog Image - Only Image in Rectangle Shape */}
+                      <div className="w-full h-48 rounded-xl overflow-hidden mb-4">
+                        <Image 
+                          src={post.image}
+                          alt={post.title}
+                          width={400}
+                          height={192}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
                       </div>
 
                       <div className="flex items-center space-x-4 text-sm text-gray-500 mb-3">

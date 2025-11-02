@@ -45,9 +45,9 @@ export default function Footer() {
 
           {/* Important Note */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Important</h3>
+            <h3 className="font-semibold text-lg mb-4">Services</h3>
             <p className="text-blue-100 text-sm leading-relaxed">
-              We provide document preparation and verification services. We do not offer litigation or court case services. All documents are reviewed by certified professionals.
+              We provide document preparation and verification services. We do not offer litigation or court case services. All documents are reviewed by expert professionals.
             </p>
           </div>
         </div>
