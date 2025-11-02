@@ -28,17 +28,15 @@ export default function ContactForm() {
   }, [])
 
   const serviceOptions = [
-    'Property & Real Estate',
+
     'Property Title Check / Verification',
     'Sale/Gift/Lease Deed Drafting',
     'Property Due Diligence',
     'Mutation & Registration Help',
-    'Personal / Identity',
     'Name Change Affidavit + Gazette',
     'Will Drafting',
     'Marriage Registration Assistance',
     'Power of Attorney Drafting',
-    'Rental & Documents',
     'Rental / Leave & License Agreement',
     'Affidavit Drafting & Notarization',
     'E-Stamping Support',
@@ -48,7 +46,6 @@ export default function ContactForm() {
     'Founders\' or Shareholder Agreement Drafting',
     'Trademark / IP Filing Help',
     'License Registrations (FSSAI, Shop Act)',
-    'Others',
     'Consumer Complaint Help',
     'RTI Filing',
     'College/University Dispute',
@@ -162,12 +159,12 @@ export default function ContactForm() {
               >
                 Back to Home
               </button>
-              <button
+              {/* <button
                 onClick={() => window.open('https://wa.me/917309292500', '_blank')}
                 className="btn-primary"
               >
                 Chat with Support
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
