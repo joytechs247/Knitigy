@@ -97,14 +97,14 @@ export default function UseCases() {
         </div>
 
         {/* Sticky CTA for mobile */}
-        <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 shadow-lg">
+        {/* <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 shadow-lg">
           <button 
             onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
             className="w-full bg-blue-600 text-white py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition-colors"
           >
             Tell Us What You Need
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   )

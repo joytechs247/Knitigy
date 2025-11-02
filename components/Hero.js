@@ -11,7 +11,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-gray-50 to-brand-lavender/20 flex items-center pt-24 lg:pt-32">
+    <section className="min-h-screen bg-gradient-to-br from-gray-50 to-brand-lavender/20 flex items-center pt-24 lg:pt-32 pb-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content - More Compact */}
