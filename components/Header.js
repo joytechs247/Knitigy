@@ -26,20 +26,19 @@ export default function Header() {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-lg' 
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+          ? 'bg-white/95 backdrop-blur-md shadow-lg'
           : 'bg-transparent'
-      }`}>
+        }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 lg:h-20">
             {/* Logo */}
             <Link href="/" className="flex-shrink-0 flex items-center">
               <div className="w-10 h-10 rounded-lg flex items-center justify-center">
-                <Image 
-                  src="/favicon.ico" 
-                  alt="Knitigy" 
-                  width={40} 
+                <Image
+                  src="/favicon.ico"
+                  alt="Knitigy"
+                  width={40}
                   height={40}
                   className="rounded-lg"
                 />
@@ -57,7 +56,22 @@ export default function Header() {
               >
                 Blogs
               </Link>
-              <button
+
+              <Link
+                href="/government-certificate-assistance"
+                className="text-gray-700 hover:text-primary-500 font-medium transition-colors duration-200 "
+              >
+                Government Certificate Assistance
+              </Link>
+
+              <Link
+                href="/property-due-diligence"
+                className="text-gray-700 hover:text-primary-500 font-medium transition-colors duration-200"
+              >
+                Property Due Diligence
+              </Link>
+
+              {/* <button
                 onClick={() => document.getElementById('use-cases')?.scrollIntoView({ behavior: 'smooth' })}
                 className="text-gray-700 hover:text-primary-500 font-medium transition-colors duration-200"
               >
@@ -68,12 +82,12 @@ export default function Header() {
                 className="text-gray-700 hover:text-primary-500 font-medium transition-colors duration-200"
               >
                 Why Trust Us
-              </button>
+              </button> */}
             </nav>
 
             {/* CTA Button */}
             <div className="hidden lg:flex items-center">
-              <button 
+              <button
                 onClick={scrollToForm}
                 className="btn-primary flex items-center space-x-2"
               >
@@ -103,6 +117,19 @@ export default function Header() {
             >
               Blogs
             </Link>
+            <Link
+              href="/government-certificate-assistance"
+              className="block w-full text-left px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-gray-50 rounded-lg font-medium transition-colors"
+            >
+              Government Certificate Assistance
+            </Link>
+
+            <Link
+              href="/property-due-diligence"
+              className="block w-full text-left px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-gray-50 rounded-lg font-medium transition-colors"
+            >
+              Property Due Diligence
+            </Link>
             <button
               onClick={() => document.getElementById('use-cases')?.scrollIntoView({ behavior: 'smooth' })}
               className="block w-full text-left px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-gray-50 rounded-lg font-medium transition-colors"
@@ -115,7 +142,7 @@ export default function Header() {
             >
               Why Trust Us
             </button>
-            <button 
+            <button
               onClick={scrollToForm}
               className="w-full btn-primary flex items-center justify-center space-x-2 mt-4"
             >
