@@ -146,6 +146,10 @@ export default function GovernmentCertificateAssistancePage() {
               <div className="text-sm text-gray-500">Documentation</div>
             </div>
           </div>
+
+          <p className="text-center text-gray-500 mt-6">
+            * Knitigya is a private consultancy and is not affiliated with any government agency.
+          </p>
         </div>
       </section>
 

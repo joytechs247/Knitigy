@@ -597,6 +597,13 @@ export default function ContactForm({ allowedCategories = null }) {
             className="w-full px-4 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 text-lg"
           />
 
+          <div className="flex items-start space-x-2 text-sm text-gray-600">
+            <input type="checkbox" required className="mt-1" />
+            <span>
+              I agree to the <a href="/terms-and-conditions" className="text-primary-500 underline">Terms & Conditions</a> and consent to be contacted.
+            </span>
+          </div>
+
           <button
             type="submit"
             disabled={isSubmitting}

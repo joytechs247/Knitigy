@@ -51,6 +51,12 @@ export default function Header() {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
               <Link
+                href="/"
+                className="text-gray-700 hover:text-primary-500 font-medium transition-colors duration-200"
+              >
+                Home
+              </Link>
+              <Link
                 href="/blogs"
                 className="text-gray-700 hover:text-primary-500 font-medium transition-colors duration-200"
               >
@@ -111,6 +117,13 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className="lg:hidden fixed top-16 inset-x-0 bg-white/95 backdrop-blur-md shadow-lg z-40">
           <div className="px-4 py-6 space-y-4">
+
+            <Link
+              href="/"
+              className="block w-full text-left px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-gray-50 rounded-lg font-medium transition-colors"
+            >
+              Home
+            </Link>
             <Link
               href="/blogs"
               className="block w-full text-left px-4 py-3 text-gray-700 hover:text-primary-500 hover:bg-gray-50 rounded-lg font-medium transition-colors"
