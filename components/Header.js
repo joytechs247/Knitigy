@@ -48,7 +48,7 @@ export default function Header() {
               </span>
             </Link>
 
-            {/* Desktop Navigation */}
+         
             <nav className="hidden lg:flex items-center space-x-8">
               <Link
                 href="/"
@@ -77,21 +77,10 @@ export default function Header() {
                 Property Due Diligence
               </Link>
 
-              {/* <button
-                onClick={() => document.getElementById('use-cases')?.scrollIntoView({ behavior: 'smooth' })}
-                className="text-gray-700 hover:text-primary-500 font-medium transition-colors duration-200"
-              >
-                What We Help With
-              </button>
-              <button
-                onClick={() => document.getElementById('trust')?.scrollIntoView({ behavior: 'smooth' })}
-                className="text-gray-700 hover:text-primary-500 font-medium transition-colors duration-200"
-              >
-                Why Trust Us
-              </button> */}
+
             </nav>
 
-            {/* CTA Button */}
+            
             <div className="hidden lg:flex items-center">
               <button
                 onClick={scrollToForm}
@@ -102,7 +91,7 @@ export default function Header() {
               </button>
             </div>
 
-            {/* Mobile menu button */}
+           
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="lg:hidden p-2 rounded-md text-gray-700 hover:text-primary-500 hover:bg-gray-100 transition-colors"
@@ -113,7 +102,7 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Mobile Menu */}
+    
       {isMobileMenuOpen && (
         <div className="lg:hidden fixed top-16 inset-x-0 bg-white/95 backdrop-blur-md shadow-lg z-40">
           <div className="px-4 py-6 space-y-4">

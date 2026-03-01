@@ -1,78 +1,3 @@
-// import ContactForm from "../../components/ContactForm"
-
-// // export const metadata = {
-// //   title: "Government Certificate Assistance | Knitigya",
-// //   description: "Help with caste, income, domicile, EWS, NCL and other government certificates."
-// // }
-
-// export default function GovernmentCertificateAssistancePage() {
-//   return (
-//     <main className="bg-white">
-
-
-//       <section className="py-16 lg:py-24 bg-primary-50">
-//         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-//           <h1 className="text-4xl lg:text-5xl font-bold text-primary-500 mb-6">
-//             Government Certificate Assistance
-//           </h1>
-//           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-//             We assist with caste, income, domicile, EWS, NCL, and other government
-//             certificate processes — without running around government offices.
-//           </p>
-//         </div>
-//       </section>
-
-
-//       <section className="py-16">
-//         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8">
-
-//           <div className="bg-white border border-gray-100 rounded-2xl shadow-sm p-6">
-//             <h3 className="text-xl font-semibold text-primary-500 mb-3">
-//               Certificates We Help With
-//             </h3>
-//             <ul className="space-y-2 text-gray-600">
-//               <li>• Caste Certificate (SC/ST/OBC)</li>
-//               <li>• EWS Certificate</li>
-//               <li>• Income Certificate</li>
-//               <li>• Non-Creamy Layer (NCL)</li>
-//               <li>• Domicile Certificate</li>
-//               <li>• Minority / BPL Certificate</li>
-//             </ul>
-//           </div>
-
-//           <div className="bg-white border border-gray-100 rounded-2xl shadow-sm p-6">
-//             <h3 className="text-xl font-semibold text-primary-500 mb-3">
-//               Our Promise
-//             </h3>
-//             <ul className="space-y-2 text-gray-600">
-//               <li>• Clear documentation guidance</li>
-//               <li>• No hidden charges</li>
-//               <li>• Transparent process</li>
-//               <li>• Dedicated support</li>
-//             </ul>
-//           </div>
-
-//         </div>
-//       </section>
-
-
-//       <ContactForm
-//         allowedCategories={[
-//           "Identity & Residence",
-//           "Community & Quota",
-//           "Welfare & Grievances"
-//         ]}
-//       />
-
-//     </main>
-//   )
-// }
-
-
-
-
-
-
 
 
 "use client"
@@ -81,10 +6,7 @@ import ContactForm from "../../components/ContactForm"
 import { Shield, CheckCircle, Clock, FileText, Users, Award } from 'lucide-react'
 import Header from "../../components/Header"
 
-// export const metadata = {
-//   title: "Government Certificate Assistance | Knitigya",
-//   description: "Help with caste, income, domicile, EWS, NCL and other government certificates."
-// }
+
 
 export default function GovernmentCertificateAssistancePage() {
   const certificates = [
@@ -107,15 +29,15 @@ export default function GovernmentCertificateAssistancePage() {
     <>
     <Header />
     <main className="bg-white">
-      {/* Hero Section with Enhanced Design */}
+      
       <section className="relative py-20 lg:py-36 bg-gradient-to-br from-primary-50 via-white to-primary-50 overflow-hidden">
-        {/* Decorative Elements */}
+        
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         <div className="absolute top-0 right-0 w-64 h-64 bg-primary-200 rounded-full filter blur-3xl opacity-20"></div>
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary-300 rounded-full filter blur-3xl opacity-20"></div>
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          {/* Badge */}
+         
           <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full mb-6">
             <Shield className="w-4 h-4" />
             <span className="text-sm font-medium">Government Services Simplified</span>
@@ -131,7 +53,7 @@ export default function GovernmentCertificateAssistancePage() {
             certificate processes — <span className="font-semibold text-primary-500">without running around government offices.</span>
           </p>
 
-          {/* Quick Stats */}
+         
           <div className="flex flex-wrap justify-center gap-8 mt-10">
             <div className="text-center">
               <div className="text-2xl font-bold text-primary-500">✓ Verified</div>
@@ -153,10 +75,10 @@ export default function GovernmentCertificateAssistancePage() {
         </div>
       </section>
 
-      {/* Services Section with Enhanced Cards */}
+      
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Section Header */}
+          
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-primary-500 mb-4">
               Comprehensive Certificate Assistance
@@ -167,7 +89,7 @@ export default function GovernmentCertificateAssistancePage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Certificates Card */}
+            
             <div className="group bg-white border border-gray-100 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
               <div className="bg-gradient-to-r from-primary-500 to-primary-600 px-6 py-4">
                 <h3 className="text-xl font-semibold text-white flex items-center gap-2">
@@ -192,7 +114,7 @@ export default function GovernmentCertificateAssistancePage() {
               </div>
             </div>
 
-            {/* Promises Card */}
+            
             <div className="group bg-white border border-gray-100 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
               <div className="bg-gradient-to-r from-primary-600 to-primary-700 px-6 py-4">
                 <h3 className="text-xl font-semibold text-white flex items-center gap-2">
@@ -223,7 +145,7 @@ export default function GovernmentCertificateAssistancePage() {
                   })}
                 </div>
 
-                {/* Trust Badge */}
+               
                 <div className="mt-6 p-4 bg-primary-50 rounded-xl border border-primary-100">
                   <div className="flex items-center gap-3">
                     <Shield className="w-6 h-6 text-primary-600" />
@@ -239,7 +161,7 @@ export default function GovernmentCertificateAssistancePage() {
         </div>
       </section>
 
-      {/* Process Section */}
+     
       <section className="py-16 bg-primary-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -278,7 +200,7 @@ export default function GovernmentCertificateAssistancePage() {
         </div>
       </section>
 
-      {/* Contact Form Section with Enhanced Styling */}
+    
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
@@ -310,7 +232,7 @@ export default function GovernmentCertificateAssistancePage() {
         </div>
       </section>
 
-      {/* Add custom CSS for grid pattern */}
+      
       <style jsx>{`
         .bg-grid-pattern {
           background-image: linear-gradient(to right, #e5e7eb 1px, transparent 1px),

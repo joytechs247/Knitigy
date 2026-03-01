@@ -25,7 +25,7 @@ export default function PropertyTitleCheck() {
       <main className="pt-20 lg:pt-24">
         <article className="py-16 lg:py-20 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Back Button */}
+            
             <Link
               href="/blogs"
               className="inline-flex items-center space-x-2 text-primary-500 hover:text-primary-600 mb-8 transition-colors"
@@ -34,7 +34,7 @@ export default function PropertyTitleCheck() {
               <span>Back to Blogs</span>
             </Link>
 
-            {/* Blog Header */}
+            
             <header className="mb-8 border-b border-gray-200 pb-8">
               <span className="inline-block px-3 py-1 bg-brand-teal text-white rounded-full text-sm font-medium mb-4">
                 Property
@@ -60,11 +60,11 @@ export default function PropertyTitleCheck() {
               </div>
             </header>
 
-            {/* Featured Image */}
+           
             <div className="mb-8 rounded-2xl overflow-hidden">
               <div className="w-full h-64 lg:h-80 rounded-2xl">
                 <Image
-                  src="/blog1.png" // Change this path for each blog page
+                  src="/blog1.png" 
                   alt="Property Title Verification Guide"
                   width={800}
                   height={400}
@@ -73,7 +73,7 @@ export default function PropertyTitleCheck() {
               </div>
             </div>
 
-            {/* Blog Content */}
+            
             <div className="prose prose-lg max-w-none mb-12">
               <p className="lead text-xl text-gray-600 mb-6">
                 Buying property is exciting — but one small paperwork miss can turn it into a long, expensive headache. A property title check examines the chain of ownership and public records to confirm the seller actually has the right to sell and that the property is free of hidden claims like mortgages, liens, or pending mutations.
@@ -114,7 +114,7 @@ export default function PropertyTitleCheck() {
               <p>We work with local registrars and municipal portals to speed corrections and reduce surprises.</p>
             </div>
 
-            {/* CTA Section */}
+           
             <div className="mt-12 p-8 bg-gradient-to-r from-primary-50 to-brand-lavender/20 rounded-2xl text-center border border-primary-100">
               <h3 className="text-2xl font-bold text-primary-500 mb-4">
                 Thinking of a property in Delhi or UP?

@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
 
-          {/* Brand */}
+          
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
               <div className="w-10 h-10 rounded-lg flex items-center justify-center">
@@ -31,7 +31,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Contact */}
+          
           <div>
             <h3 className="font-semibold text-lg mb-4">Get In Touch</h3>
             <div className="space-y-3 text-sm">
@@ -46,7 +46,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Services */}
+          
           <div>
             <h3 className="font-semibold text-lg mb-4">Services</h3>
             <p className="text-blue-100 text-sm leading-relaxed">
@@ -56,7 +56,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Legal */}
+       
           <div>
             <h3 className="font-semibold text-lg mb-4">Legal</h3>
             <div className="space-y-2 text-sm">
@@ -77,7 +77,7 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom */}
+       
         <div className="border-t border-blue-400 mt-10 pt-6 text-center">
           <p className="text-blue-200 text-sm">
             © {currentYear} Knitigya. All rights reserved.

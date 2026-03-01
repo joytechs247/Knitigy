@@ -14,7 +14,7 @@ export default function Hero() {
     <section className="min-h-screen bg-gradient-to-br from-gray-50 to-brand-lavender/20 flex items-center pt-24 lg:pt-32 pb-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          {/* Left Content - More Compact */}
+          
           <div className="space-y-6 lg:space-y-8">
             <h1 className="text-3xl lg:text-5xl xl:text-6xl font-bold text-primary-500 leading-tight">
               Get Important Paperwork Done —{' '}
@@ -26,7 +26,7 @@ export default function Hero() {
               Buying property, changing your name, or need a document drafted? We help you get it done start to finish. Expert-reviewed. No chasing agents. No upfront payment.
             </p>
 
-            {/* CTA Button */}
+           
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <button 
                 onClick={scrollToForm}
@@ -37,7 +37,7 @@ export default function Hero() {
               </button>
             </div>
 
-            {/* Trust Indicators - More Compact */}
+           
             <div className="grid grid-cols-2 gap-3 pt-6">
               <div className="flex items-center space-x-2 text-sm text-gray-600">
                 <div className="w-2 h-2 bg-brand-teal rounded-full"></div>
@@ -58,7 +58,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Visual - Hero Image */}
+          
           <div className="relative h-64 lg:h-80 xl:h-96 rounded-3xl flex items-center justify-center overflow-hidden">
             <Image 
               src="/image1.png" 

@@ -69,7 +69,7 @@ export default function Blogs() {
       <Header />
       
       <main className="pt-20 lg:pt-24">
-        {/* Hero */}
+       
         <section className="bg-gradient-to-br from-primary-50 to-brand-lavender/20 py-16 lg:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl lg:text-5xl font-bold text-primary-500 mb-4">
@@ -81,7 +81,7 @@ export default function Blogs() {
           </div>
         </section>
 
-        {/* Blog Grid */}
+        
         <section className="py-16 lg:py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -89,7 +89,7 @@ export default function Blogs() {
                 <article key={post.slug} className="card group hover:shadow-lg transition-all duration-300 hover:scale-105">
                   <Link href={`/blogs/${post.slug}`} className="block h-full">
                     <div className="p-6 h-full flex flex-col">
-                      {/* Blog Image - Only Image in Rectangle Shape */}
+                      
                       <div className="w-full h-48 rounded-xl overflow-hidden mb-4">
                         <Image 
                           src={post.image}
@@ -142,7 +142,7 @@ export default function Blogs() {
               ))}
             </div>
 
-            {/* More Content Coming Soon */}
+           
             <div className="text-center mt-16">
               <div className="bg-gradient-to-r from-primary-50 to-brand-lavender/20 rounded-2xl p-8 border border-primary-100">
                 <h3 className="text-2xl font-bold text-primary-500 mb-4">
