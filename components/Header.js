@@ -37,14 +37,14 @@ export default function Header() {
               <div className="w-10 h-10 rounded-lg flex items-center justify-center">
                 <Image
                   src="/favicon.ico"
-                  alt="Knitigy"
+                  alt="Knitigya"
                   width={40}
                   height={40}
                   className="rounded-lg"
                 />
               </div>
               <span className="ml-3 text-xl font-bold text-primary-500">
-                Knitigy
+                Knitigya
               </span>
             </Link>
 

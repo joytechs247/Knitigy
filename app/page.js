@@ -6,10 +6,10 @@ import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
 
 export const metadata = {
-  title: 'Get Important Paperwork Done Without Stress | Knitigy',
-  description: 'Knitigy helps you get property verification, will drafting, rental agreements, and document preparation done start to finish. Expert-reviewed. No upfront payment.',
+  title: 'Get Important Paperwork Done Without Stress | Knitigya',
+  description: 'Knitigya helps you get property verification, will drafting, rental agreements, and document preparation done start to finish. Expert-reviewed. No upfront payment.',
   openGraph: {
-    title: 'Get Important Paperwork Done Without Stress | Knitigy',
+    title: 'Get Important Paperwork Done Without Stress | Knitigya',
     description: 'Expert-reviewed document services without the running around. No upfront payment.',
   },
 }
