@@ -2,6 +2,7 @@
 
 'use client'
 import { useState, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 import { Send, CheckCircle, AlertCircle } from 'lucide-react'
 
 
@@ -13,6 +14,7 @@ const initEmailJS = () => {
 }
 
 export default function ContactForm({ allowedCategories = null }) {
+  const router = useRouter()
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -133,15 +135,8 @@ export default function ContactForm({ allowedCategories = null }) {
 
       await emailJS.send(serviceID, templateID, templateParams, publicKey)
 
-      setSubmitStatus('success')
-      setFormData({
-        name: '',
-        phone: '',
-        email: '',
-        category: '',
-        service: '',
-        description: ''
-      })
+      // Redirect to thank you page for Google Ads conversion tracking
+      router.push('/thank-you')
 
     } catch (error) {
       console.error(error)
@@ -152,21 +147,7 @@ export default function ContactForm({ allowedCategories = null }) {
   }
 
   if (submitStatus === 'success') {
-    return (
-      <section id="contact-form" className="py-16 lg:py-24 bg-white">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
-            <CheckCircle size={64} className="text-green-500 mx-auto mb-6" />
-            <h2 className="text-3xl font-bold text-primary-500 mb-4">
-              Thank You!
-            </h2>
-            <p className="text-lg text-gray-600 mb-6">
-              Our team will contact you within 2 working hours.
-            </p>
-          </div>
-        </div>
-      </section>
-    )
+    return null
   }
 
   return (
