@@ -133,15 +133,18 @@ export default function ContactForm({ allowedCategories = null }) {
         })
       }
 
-      await emailJS.send(serviceID, templateID, templateParams, publicKey)
-
-      // Redirect to thank you page for Google Ads conversion tracking
-      router.push('/thank-you')
+      const response = await emailJS.send(serviceID, templateID, templateParams, publicKey)
+      
+      if (response.status === 200) {
+        // Small delay to ensure email is processed before redirecting
+        setTimeout(() => {
+          router.push('/thank-you')
+        }, 500)
+      }
 
     } catch (error) {
-      console.error(error)
+      console.error('Form submission error:', error)
       setSubmitStatus('error')
-    } finally {
       setIsSubmitting(false)
     }
   }
